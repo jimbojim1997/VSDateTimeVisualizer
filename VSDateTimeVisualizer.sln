@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSDateTimeVisualizer.Debugger", "VSDateTimeVisualizer.Debugger\VSDateTimeVisualizer.Debugger.csproj", "{884484EA-3714-498F-9B80-8CF7762999C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{F5CD1065-460F-427B-B334-42E04740A05E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{9E278B92-27BC-4189-9EB4-D1C1CD6A2454}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{884484EA-3714-498F-9B80-8CF7762999C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{884484EA-3714-498F-9B80-8CF7762999C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{884484EA-3714-498F-9B80-8CF7762999C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CD1065-460F-427B-B334-42E04740A05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CD1065-460F-427B-B334-42E04740A05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CD1065-460F-427B-B334-42E04740A05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CD1065-460F-427B-B334-42E04740A05E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E278B92-27BC-4189-9EB4-D1C1CD6A2454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E278B92-27BC-4189-9EB4-D1C1CD6A2454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E278B92-27BC-4189-9EB4-D1C1CD6A2454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E278B92-27BC-4189-9EB4-D1C1CD6A2454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

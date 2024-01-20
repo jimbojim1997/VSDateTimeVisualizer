@@ -2,16 +2,14 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-using Microsoft.VisualStudio.DebuggerVisualizers;
-
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VSDateTimeVisualizer.Debugger")]
+[assembly: AssemblyTitle("Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VSDateTimeVisualizer.Debugger")]
+[assembly: AssemblyProduct("Test")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -22,7 +20,7 @@ using Microsoft.VisualStudio.DebuggerVisualizers;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("884484ea-3714-498f-9b80-8cf7762999c4")]
+[assembly: Guid("9e278b92-27bc-4189-9eb4-d1c1cd6a2454")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -36,9 +34,3 @@ using Microsoft.VisualStudio.DebuggerVisualizers;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-
-[assembly: System.Diagnostics.DebuggerVisualizer(
-        typeof(VSDateTimeVisualizer.Debugger.DateTimeDebuggerVisualizer),
-        typeof(VisualizerObjectSource),
-        Target = typeof(System.DateTime),
-        Description = "DateTime Visualizer")]
