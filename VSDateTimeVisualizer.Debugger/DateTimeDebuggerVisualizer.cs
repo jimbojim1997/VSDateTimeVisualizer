@@ -25,8 +25,8 @@ namespace VSDateTimeVisualizer.Debugger
             if (objectProvider is null) return;
 
             var date = objectProvider.GetDeserializableObject().ToObject<DateTime>();
-            
-            MessageBox.Show(date.ToString("O"));
+
+            windowService.ShowDialog(new DateTimeVisualizerForm(date));
         }
     }
 }
