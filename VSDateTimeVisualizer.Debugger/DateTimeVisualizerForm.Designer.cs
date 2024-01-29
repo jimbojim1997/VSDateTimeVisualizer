@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label label1;
-            System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label2;
+            System.Windows.Forms.Label label1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DateTimeVisualizerForm));
             this.CustomFormatInput = new System.Windows.Forms.TextBox();
             this.CustomFormatOutput = new System.Windows.Forms.TextBox();
             this.DateTimeValue = new System.Windows.Forms.TextBox();
             this.ExampleFormatTable = new System.Windows.Forms.TableLayoutPanel();
-            label1 = new System.Windows.Forms.Label();
-            label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
             this.ExampleFormatTable.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,32 +67,15 @@
             this.DateTimeValue.TabIndex = 0;
             this.DateTimeValue.TextChanged += new System.EventHandler(this.DateTimeValue_TextChanged);
             // 
-            // ExampleFormatTable
+            // label3
             // 
-            this.ExampleFormatTable.AutoScroll = true;
-            this.ExampleFormatTable.ColumnCount = 3;
-            this.ExampleFormatTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.ExampleFormatTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.ExampleFormatTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.ExampleFormatTable.Controls.Add(label1, 0, 0);
-            this.ExampleFormatTable.Controls.Add(label2, 1, 0);
-            this.ExampleFormatTable.Controls.Add(label3, 2, 0);
-            this.ExampleFormatTable.Location = new System.Drawing.Point(12, 90);
-            this.ExampleFormatTable.Name = "ExampleFormatTable";
-            this.ExampleFormatTable.RowCount = 1;
-            this.ExampleFormatTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.ExampleFormatTable.Size = new System.Drawing.Size(494, 348);
-            this.ExampleFormatTable.TabIndex = 3;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(3, 0);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(45, 13);
-            label1.TabIndex = 0;
-            label1.Text = "Format";
+            label3.AutoSize = true;
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.Location = new System.Drawing.Point(140, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(43, 13);
+            label3.TabIndex = 2;
+            label3.Text = "Result";
             // 
             // label2
             // 
@@ -104,21 +87,40 @@
             label2.TabIndex = 1;
             label2.Text = "Description";
             // 
-            // label3
+            // label1
             // 
-            label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label3.Location = new System.Drawing.Point(280, 0);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(43, 13);
-            label3.TabIndex = 2;
-            label3.Text = "Result";
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(45, 13);
+            label1.TabIndex = 0;
+            label1.Text = "Format";
+            // 
+            // ExampleFormatTable
+            // 
+            this.ExampleFormatTable.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExampleFormatTable.AutoScroll = true;
+            this.ExampleFormatTable.ColumnCount = 3;
+            this.ExampleFormatTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.ExampleFormatTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.ExampleFormatTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.ExampleFormatTable.Controls.Add(label1, 0, 0);
+            this.ExampleFormatTable.Controls.Add(label2, 1, 0);
+            this.ExampleFormatTable.Controls.Add(label3, 2, 0);
+            this.ExampleFormatTable.Location = new System.Drawing.Point(12, 90);
+            this.ExampleFormatTable.Name = "ExampleFormatTable";
+            this.ExampleFormatTable.RowCount = 1;
+            this.ExampleFormatTable.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.ExampleFormatTable.Size = new System.Drawing.Size(644, 348);
+            this.ExampleFormatTable.TabIndex = 3;
             // 
             // DateTimeVisualizerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 450);
+            this.ClientSize = new System.Drawing.Size(669, 450);
             this.Controls.Add(this.ExampleFormatTable);
             this.Controls.Add(this.DateTimeValue);
             this.Controls.Add(this.CustomFormatOutput);

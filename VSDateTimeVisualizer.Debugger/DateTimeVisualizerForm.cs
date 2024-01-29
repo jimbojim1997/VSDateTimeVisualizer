@@ -21,6 +21,7 @@ namespace VSDateTimeVisualizer.Debugger
 
             _exampleOutputFormats.Clear();
             CreateExampleRows(ExampleDateTimeFormats.GetStandardFormats(), ExampleFormatTable, _exampleOutputFormats);
+            CreateExampleRows(ExampleDateTimeFormats.GetCustomFormats(), ExampleFormatTable, _exampleOutputFormats);
 
             UpdateDateTimeOutputs(_debugValue);
         }
@@ -75,20 +76,25 @@ namespace VSDateTimeVisualizer.Debugger
             {
                 var formatLabel = new Label()
                 {
-                    Text = row.Format
+                    Text = row.Label,
+                    AutoSize = true
                 };
                 table.Controls.Add(formatLabel, 0, rowIndex);
 
                 var descriptionLabel = new Label()
                 {
-                    Text = row.Description
+                    Text = row.Description,
+                    AutoSize = true
                 };
                 table.Controls.Add(descriptionLabel, 1, rowIndex);
 
-                var outputLabel = new Label();
+                var outputLabel = new Label()
+                {
+                    AutoSize = true
+                };
                 table.Controls.Add(outputLabel, 2, rowIndex);
 
-                output.Add(new ExampleFormatOutput(row.Format, outputLabel));
+                output.Add(new ExampleFormatOutput(row.Format, outputLabel, row.Render));
                 rowIndex++;
             }
         }
